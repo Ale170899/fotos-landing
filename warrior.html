@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A próxima camada de inteligência</title>
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos e Scripts -->
+  <link rel="stylesheet" href="warrior.css">
+  <script defer src="warrior.js"></script>
+</head>
+<body>
+
+  <!-- Tela de Carregamento -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-track">
+        <div class="loader-bar" id="loader-bar"></div>
+      </div>
+      <div class="loader-text">
+        <span>Carregando experiência...</span>
+        <span id="loader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canvas de Fundo Fixo -->
+  <canvas id="video-canvas"></canvas>
+
+  <!-- Navegação -->
+  <nav class="nav-bar">
+    <div class="nav-logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Ember</span>
+    </div>
+    <div class="nav-links">
+      <a href="#">Plataforma</a>
+      <a href="#">Modelos</a>
+      <a href="#">Infraestrutura</a>
+      <a href="#">Empresa</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#" class="btn-primary btn-small">Solicitar acesso</a>
+    </div>
+  </nav>
+
+  <!-- Conteúdo de Scroll -->
+  <main class="scroll-container">
+    
+    <!-- Hero Principal -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Infraestrutura de IA · Série C
+        </div>
+        <h1 class="hero-h1">A próxima camada<br><em>de inteligência.</em></h1>
+        <p class="hero-copy">
+          Computação, memória e raciocínio em uma única plataforma. Construída para modelos que ainda não existem.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn-primary">Começar a construir</a>
+          <a href="#" class="btn-outline">Ler o paper</a>
+        </div>
+      </div>
+      
+      <!-- Indicador de Scroll -->
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-hint-line"></span>
+        <span class="scroll-hint-text">Role para explorar</span>
+      </div>
+    </section>
+
+    <!-- Seção 1 -->
+    <section class="story-section" id="step-1">
+      <div class="story-panel story-panel--right animate-in">
+        <span class="story-badge">01 — Computação</span>
+        <h2 class="section-title story-h2">Poder bruto,<br>refinado.</h2>
+        <p class="section-copy story-copy">
+          Clusters de GPU distribuídos globalmente com latência ultrabaixa. 
+          Nossa infraestrutura foi projetada para suportar os maiores modelos 
+          de linguagem do mundo sem comprometer a velocidade de resposta.
+        </p>
+        <div class="story-stat-row">
+          <div class="story-stat">
+            <span class="stat-num">10×</span>
+            <span class="stat-label">mais rápido</span>
+          </div>
+          <div class="story-stat">
+            <span class="stat-num">99.99%</span>
+            <span class="stat-label">uptime</span>
+          </div>
+          <div class="story-stat">
+            <span class="stat-num">&lt;12ms</span>
+            <span class="stat-label">latência</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2 -->
+    <section class="story-section" id="step-2">
+      <div class="story-panel story-panel--left animate-in">
+        <span class="story-badge">02 — Memória</span>
+        <h2 class="section-title story-h2">Contexto sem<br>limites.</h2>
+        <p class="section-copy story-copy">
+          Um sistema de memória persistente e vetorial que mantém o contexto 
+          completo entre sessões. Seus modelos lembram, aprendem e evoluem 
+          com cada interação.
+        </p>
+        <ul class="feature-list">
+          <li>Memória de longo prazo nativa</li>
+          <li>Recuperação semântica em tempo real</li>
+          <li>Integração com bases de dados proprietárias</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção 3 -->
+    <section class="story-section" id="step-3">
+      <div class="story-panel story-panel--center animate-in">
+        <span class="story-badge">03 — Raciocínio</span>
+        <h2 class="section-title story-h2">Pensamento<br>estruturado.</h2>
+        <div class="reason-grid">
+          <div class="reason-card">
+            <h4>Planejamento Multi-Step</h4>
+            <p>Decompõe problemas complexos em etapas resolvíveis antes de agir.</p>
+          </div>
+          <div class="reason-card">
+            <h4>Auto-Correção</h4>
+            <p>Avalia e refina as próprias respostas em tempo real.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 4 (CTA Final) -->
+    <section class="story-section cta-section" id="step-4">
+      <div class="story-panel story-panel--center animate-in">
+        <h2 class="section-title story-h2">Pronto para o futuro?</h2>
+        <p class="section-copy story-copy" style="margin-bottom: 40px; margin-left: auto; margin-right: auto; text-align: center;">
+          Junte-se às equipes de engenharia que estão redefinindo o que é possível com inteligência artificial.
+        </p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="#" class="btn-primary">Criar conta gratuita</a>
+          <a href="#" class="btn-outline">Falar com vendas</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

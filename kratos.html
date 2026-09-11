@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Fúria de Esparta</title>
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos e Scripts -->
+  <link rel="stylesheet" href="kratos.css">
+  <script defer src="kratos.js"></script>
+</head>
+<body>
+
+  <!-- Tela de Carregamento -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-track">
+        <div class="loader-bar" id="loader-bar"></div>
+      </div>
+      <div class="loader-text">
+        <span>Invocando os Deuses...</span>
+        <span id="loader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canvas de Fundo Fixo -->
+  <canvas id="video-canvas"></canvas>
+
+  <!-- Navegação -->
+  <nav class="nav-bar">
+    <div class="nav-logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Ícone que lembra a Lâmina do Caos / Ômega -->
+        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7 15L12 10L17 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Olympos</span>
+    </div>
+    <div class="nav-links">
+      <a href="#">O Fantasma</a>
+      <a href="#">As Lâminas</a>
+      <a href="#">A Vingança</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#" class="btn-primary btn-small">Enfrentar o Destino</a>
+    </div>
+  </nav>
+
+  <!-- Conteúdo de Scroll Multi-Dobra -->
+  <main class="scroll-container">
+    
+    <!-- DOBRA 0 (Vídeo kratos0) -->
+    <div class="fold fold-0" data-video-index="0">
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            O Fantasma de Esparta
+          </div>
+          <h1 class="hero-h1">O poder forjado<br><em>no fogo do submundo.</em></h1>
+          <p class="hero-copy">
+            A dor moldou o guerreiro. A traição acendeu a chama. O Olimpo jamais estará seguro novamente.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn-primary">Despertar a Fúria</a>
+          </div>
+        </div>
+        
+        <!-- Indicador de Scroll -->
+        <div class="scroll-hint" aria-hidden="true">
+          <span class="scroll-hint-line"></span>
+          <span class="scroll-hint-text">Role para avançar</span>
+        </div>
+      </section>
+      
+      <!-- Falso espaço no final da dobra 0 para transição suave -->
+      <section class="story-section">
+        <div class="story-panel story-panel--right animate-in">
+          <span class="story-badge">01 — Poder Bruto</span>
+          <h2 class="section-title story-h2">Força Inabalável.</h2>
+          <p class="section-copy story-copy">
+            A força necessária para arrancar as asas de uma fúria ou derrubar os deuses mais temíveis da mitologia grega.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- DOBRA 1 (Vídeo kratos1) -->
+    <div class="fold fold-1" data-video-index="1">
+      <section class="story-section">
+        <div class="story-panel story-panel--left animate-in">
+          <span class="story-badge">02 — As Lâminas</span>
+          <h2 class="section-title story-h2">Correntes do Caos.</h2>
+          <p class="section-copy story-copy">
+            Cravadas em sua pele, as Lâminas do Caos cortam através de exércitos inteiros com uma agilidade letal e fogo primordial.
+          </p>
+          <ul class="feature-list">
+            <li>Alcance devastador</li>
+            <li>Fogo do Submundo</li>
+            <li>Combate implacável</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- DOBRA 2 (Vídeo kratos2) -->
+    <div class="fold fold-2" data-video-index="2">
+      <section class="story-section">
+        <div class="story-panel story-panel--center animate-in">
+          <span class="story-badge">03 — A Vingança</span>
+          <h2 class="section-title story-h2">Destruição Absoluta.</h2>
+          <div class="reason-grid">
+            <div class="reason-card">
+              <h4>Fúria Divina</h4>
+              <p>O poder que faz a terra tremer e os mares secarem sob a ira de um mortal ascendido.</p>
+            </div>
+            <div class="reason-card">
+              <h4>Destino Selado</h4>
+              <p>O fim da era dos Deuses foi decretado. Nada restará além de ruínas e cinzas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Final na mesma dobra -->
+      <section class="story-section cta-section">
+        <div class="story-panel story-panel--center animate-in">
+          <h2 class="section-title story-h2">Pronto para a Batalha?</h2>
+          <p class="section-copy story-copy" style="margin-bottom: 40px; margin-left: auto; margin-right: auto; text-align: center;">
+            Junte-se à jornada mais épica e sangrenta já registrada nas páginas da mitologia.
+          </p>
+          <div class="hero-actions" style="justify-content: center;">
+            <a href="#" class="btn-primary">Empunhar as Lâminas</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+</body>
+</html>

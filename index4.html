@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infraestrutura de IA — A Próxima Camada de Inteligência</title>
+  <meta name="description" content="Computação, memória e raciocínio em uma única plataforma. Construída para modelos que ainda não existem.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,500;0,600;0,700&display=swap">
+  <style>
+    .section-title, .section-copy, .section-nav, .section-brand { font-family: 'Manrope', sans-serif; }
+  </style>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+  <!-- ─── LOADER ──────────────────────────────────────────────── -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo section-brand">EMBER<span class="a-dot">.</span>AI</div>
+      <div class="loader-track"><div class="loader-fill" id="loader-bar"></div></div>
+      <p class="loader-label" id="loader-label">Carregando… 0%</p>
+    </div>
+  </div>
+
+  <!-- ─── CANVAS (scroll-driven) ──────────────────────────────── -->
+  <canvas id="video-canvas"></canvas>
+
+  <!-- ─── PÁGINA ──────────────────────────────────────────────── -->
+  <div id="page">
+
+    <!-- ══════════════════════════════════════════ HERO -->
+    <section class="section-hero" id="hero">
+
+      <!-- Navegação — prompt.txt: Plataforma, Modelos, Infraestructura, Empresa + Solicitar acceso -->
+      <nav class="nav-bar section-nav" aria-label="Navegação principal">
+        <div class="nav-logo section-brand">EMBER<span class="a-dot">.</span>AI</div>
+        <ul class="nav-links" role="list">
+          <li><a href="#" class="nav-link">Plataforma</a></li>
+          <li><a href="#" class="nav-link">Modelos</a></li>
+          <li><a href="#" class="nav-link nav-active">Infraestrutura</a></li>
+          <li><a href="#" class="nav-link">Empresa</a></li>
+        </ul>
+        <a href="#" class="btn btn-nav section-nav" id="btn-access">Solicitar acesso</a>
+        <button class="hamburger" aria-label="Menu" id="nav-hamburger">
+          <span></span><span></span>
+        </button>
+      </nav>
+
+      <!-- Corpo Hero — prompt.txt: bloco esquerdo, badge, H1, parágrafo, botões -->
+      <div class="hero-body">
+        <div class="hero-left">
+          <!-- Etiqueta: «Infraestructura de IA · Serie C» -->
+          <span class="hero-badge section-brand">Infraestrutura de IA · Série C</span>
+
+          <!-- H1: «La siguiente capa / de inteligencia.», Manrope 500, 74px -->
+          <h1 class="section-title hero-h1">
+            A próxima camada<br>
+            <em>de inteligência.</em>
+          </h1>
+
+          <!-- Parágrafo: 18px, line-height 1.5, max 520px -->
+          <p class="section-copy hero-copy">
+            Computação, memória e raciocínio em uma única plataforma.
+            Construída para modelos que ainda não existem.
+          </p>
+
+          <!-- Botões: «Empezar a construir» branco + «Leer el paper» contornado -->
+          <div class="hero-ctas">
+            <a href="#" class="btn btn-primary" id="btn-build">Começar a construir</a>
+            <a href="#" class="btn btn-outline" id="btn-paper">Ler o paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logos tipográficos na base -->
+      <div class="hero-logos" aria-label="Parceiros">
+        <span class="section-brand logo-item">VERTEX</span>
+        <span class="logo-sep" aria-hidden="true">/</span>
+        <span class="section-brand logo-item">ORION<sup>™</sup></span>
+        <span class="logo-sep" aria-hidden="true">/</span>
+        <span class="section-brand logo-item">PULSAR</span>
+        <span class="logo-sep" aria-hidden="true">/</span>
+        <span class="section-brand logo-item">AETHER</span>
+        <span class="logo-sep" aria-hidden="true">/</span>
+        <span class="section-brand logo-item">QUBIT</span>
+        <span class="logo-sep" aria-hidden="true">/</span>
+        <span class="section-brand logo-item">NEXUS</span>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-label">Role para explorar</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ SEÇÃO 1 — Computação -->
+    <section class="story-section" id="step-1">
+      <div class="story-panel panel-right animate-in">
+        <span class="story-badge">01 — Computação</span>
+        <h2 class="section-title story-h2">Poder bruto,<br>refinado.</h2>
+        <p class="section-copy story-copy">
+          Clusters de GPU distribuídos globalmente com latência ultrabaixa.
+          Nossa infraestrutura suporta os maiores modelos de linguagem
+          sem comprometer velocidade nem estabilidade.
+        </p>
+        <div class="stat-row">
+          <div class="stat-block">
+            <span class="stat-n">10×</span>
+            <span class="stat-l">mais rápido</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-n">99.99%</span>
+            <span class="stat-l">uptime</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-n">&lt;12ms</span>
+            <span class="stat-l">latência</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ SEÇÃO 2 — Memória -->
+    <section class="story-section" id="step-2">
+      <div class="story-panel panel-left animate-in">
+        <span class="story-badge">02 — Memória</span>
+        <h2 class="section-title story-h2">Contexto sem<br>limites.</h2>
+        <p class="section-copy story-copy">
+          Sistema de memória persistente e vetorial que mantém o contexto
+          completo entre sessões. Seus modelos lembram, aprendem e evoluem
+          com cada interação.
+        </p>
+        <ul class="feat-list">
+          <li>Memória de longo prazo nativa</li>
+          <li>Recuperação semântica em tempo real</li>
+          <li>Integração com bases de dados proprietárias</li>
+          <li>Vetorização automática de contexto</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ SEÇÃO 3 — Raciocínio -->
+    <section class="story-section" id="step-3">
+      <div class="story-panel panel-center animate-in">
+        <span class="story-badge">03 — Raciocínio</span>
+        <h2 class="section-title story-h2">Além da predição.</h2>
+        <p class="section-copy story-copy">
+          O motor de raciocínio planeja, questiona e refina hipóteses —
+          construindo respostas que entendem o contexto real do seu negócio.
+        </p>
+        <div class="reason-grid">
+          <div class="reason-card"><span class="r-icon">◈</span><span>Planejamento multi-etapa</span></div>
+          <div class="reason-card"><span class="r-icon">◇</span><span>Auto-crítica integrada</span></div>
+          <div class="reason-card"><span class="r-icon">◉</span><span>Raciocínio causal</span></div>
+          <div class="reason-card"><span class="r-icon">◎</span><span>Síntese multimodal</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ SEÇÃO 4 — CTA Final -->
+    <section class="story-section section-cta" id="step-4">
+      <div class="story-panel panel-center animate-in cta-panel">
+        <span class="story-badge">Série C — Agora aberta</span>
+        <h2 class="section-title cta-h2">Construa o futuro<br>com a gente.</h2>
+        <p class="section-copy story-copy cta-copy">
+          Acesso antecipado disponível para startups e empresas que estão
+          construindo a próxima geração de produtos com IA.
+        </p>
+        <div class="hero-ctas" style="justify-content:center;">
+          <a href="#" class="btn btn-primary" id="btn-cta">Solicitar acesso</a>
+          <a href="#" class="btn btn-outline" id="btn-docs">Ver documentação</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page -->
+
+  <script src="script4.js"></script>
+</body>
+</html>

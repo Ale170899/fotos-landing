@@ -1,0 +1,31 @@
+Crea una sección hero de infraestructura de IA.
+
+Reproduce solo el diseño y las interacciones descritas. Los textos son ejemplos adaptables. No añadas páginas, paneles ni funciones para los enlaces o botones cuyo destino no se indique.
+
+Fondo de video a pantalla completa, negro #050505, texto #fafafa y secundario #a7a6a6.
+
+Navegación Plataforma, Modelos, Infraestructura, Empresa y botón «Solicitar acceso». Bloque izquierdo con etiqueta «Infraestructura de IA · Serie C» y H1 «La siguiente capa / de inteligencia.», Manrope 500, 74 px en escritorio amplio, line-height 1.02, letter-spacing −0.03em y margen 75 px. Párrafo de 18 px con interlineado 1.5, máximo 520 px: «Cómputo, memoria y razonamiento en una sola plataforma. Construida para modelos que todavía no existen.». Botones de 50 px y borde redondeado: «Empezar a construir» blanco y «Leer el paper» contorneado. Logos tipográficos pequeños en la base. Móvil: márgenes 24 px, contenido desde el 24% superior, H1 clamp(30px, 9vw, 44px) con line-height 1, párrafo 15 px y logos en dos columnas.
+
+El video ocupa su contenedor con object-fit: cover y object-position: center, sin zoom ni parallax.
+
+FUENTES
+Manrope: título (500), cuerpo, botones y logos tipográficos; normal 400/500/600/700.
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,500;0,600;0,700&amp;display=swap">
+<style>
+.section-title, .section-copy, .section-nav, .section-brand { font-family: 'Manrope', sans-serif; }
+</style>
+```
+
+En móvil evita cortes y desbordamientos. Mantén foco visible; pausa la animación fuera de pantalla y con movimiento reducido.
+
+VIDEO: CARGA
+Usa la URL del VIDEO como src hasta descargarlo; después cambia a su ruta local. Reproduce con autoplay, muted, loop y playsinline, sin controles adicionales. No necesitas fetch ni extraer fotogramas. Pausa fuera de pantalla y con movimiento reducido; usa el POSTER si está disponible. No añadas movimiento artificial al video.
+
+ASSETS PARA ESTA SECCIÓN
+- VIDEO: https://media.dinamosites.com/library/v1/sections/matriz-cognitiva-background-931208eeb5c1.mp4
+  Ruta local recomendada: /media/matriz-cognitiva-background.mp4 (archivo dentro de la carpeta pública de tu proyecto).
+
+ALOJAMIENTO RECOMENDADO
+Puedes usar estas URLs durante el desarrollo. Antes de publicar, recomendamos descargar los assets y alojarlos en tu propio proyecto o servicio de medios: no son un alojamiento permanente. Si una descarga falla, continúa e indica el archivo pendiente.

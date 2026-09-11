@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infraestrutura de IA — A Próxima Camada de Inteligência</title>
+  <meta name="description" content="Computação, memória e raciocínio em uma única plataforma. Construída para modelos que ainda não existem.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,500;0,600;0,700&display=swap">
+  <style>
+    .section-title, .section-copy, .section-nav, .section-brand { font-family: 'Manrope', sans-serif; }
+  </style>
+  <link rel="stylesheet" href="style4_clean.css">
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo section-brand">EMBER<span class="a-dot">.</span>AI</div>
+      <div class="loader-track"><div class="loader-fill" id="loader-bar"></div></div>
+      <p class="loader-label" id="loader-label">Carregando… 0%</p>
+    </div>
+  </div>
+
+  <canvas id="video-canvas"></canvas>
+
+  <div id="page">
+
+    <section class="section-hero" id="hero">
+
+      <nav class="nav-bar section-nav" aria-label="Navegação principal">
+        <div class="nav-logo section-brand">EMBER<span class="a-dot">.</span>AI</div>
+        <ul class="nav-links" role="list">
+          <li><a href="#" class="nav-link">Plataforma</a></li>
+          <li><a href="#" class="nav-link">Modelos</a></li>
+          <li><a href="#" class="nav-link nav-active">Infraestrutura</a></li>
+          <li><a href="#" class="nav-link">Empresa</a></li>
+        </ul>
+        <a href="#" class="btn btn-nav section-nav" id="btn-access">Solicitar acesso</a>
+        <button class="hamburger" aria-label="Menu" id="nav-hamburger">
+          <span></span><span></span>
+        </button>
+      </nav>
+
+      <div class="hero-body">
+        <div class="hero-left">
+          <h1 class="section-title hero-h1">
+            A próxima camada<br>
+            <em>de inteligência.</em>
+          </h1>
+          <p class="section-copy hero-copy">
+            Computação, memória e raciocínio em uma única plataforma.
+            Construída para modelos que ainda não existem.
+          </p>
+          <div class="hero-ctas">
+            <a href="#" class="btn btn-primary" id="btn-build">Começar a construir</a>
+            <a href="#" class="btn btn-outline" id="btn-paper">Ler o paper</a>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="story-section" id="step-1">
+      <div class="story-panel panel-right animate-in">
+        <h2 class="section-title story-h2">Poder bruto,<br>refinado.</h2>
+        <p class="section-copy story-copy">
+          Clusters de GPU distribuídos globalmente com latência ultrabaixa.
+          Nossa infraestrutura suporta os maiores modelos de linguagem
+          sem comprometer velocidade nem estabilidade.
+        </p>
+      </div>
+    </section>
+
+    <section class="story-section" id="step-2">
+      <div class="story-panel panel-left animate-in">
+        <h2 class="section-title story-h2">Contexto sem<br>limites.</h2>
+        <p class="section-copy story-copy">
+          Sistema de memória persistente e vetorial que mantém o contexto
+          completo entre sessões. Seus modelos lembram, aprendem e evoluem
+          com cada interação.
+        </p>
+        <ul class="feat-list">
+          <li>Memória de longo prazo nativa</li>
+          <li>Recuperação semântica em tempo real</li>
+          <li>Integração com bases de dados proprietárias</li>
+          <li>Vetorização automática de contexto</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="story-section section-cta" id="step-4">
+      <div class="story-panel panel-center animate-in cta-panel">
+        <h2 class="section-title cta-h2">Construa o futuro<br>com a gente.</h2>
+        <p class="section-copy story-copy cta-copy">
+          Acesso antecipado disponível para startups e empresas que estão
+          construindo a próxima geração de produtos com IA.
+        </p>
+        <div class="hero-ctas" style="justify-content:center;">
+          <a href="#" class="btn btn-primary" id="btn-cta">Solicitar acesso</a>
+          <a href="#" class="btn btn-outline" id="btn-docs">Ver documentação</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script4_clean.js"></script>
+</body>
+</html>
